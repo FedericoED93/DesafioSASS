@@ -1,0 +1,55 @@
+main{
+    article{
+
+        --bs-gutter-x: 0;
+
+        .div_main{
+           background-color: map-get($coloresgenerales, color1 );
+            color: map-get($coloresgenerales, color4 );
+            font-size: 0.8rem;
+            --bs-gutter-x: 0;
+            
+            h2{
+                padding-top: 10%;
+                margin-left: 1rem;
+                width: 80%;
+                text-align: left;
+                font-weight: map-get($textos, grosor1 );
+                font-size: 2rem;
+            }
+            p{
+                padding-top: 5%;
+                margin-left: 1rem;
+                width: 80%;
+                text-align: left;
+                font-size: 1rem;
+            }
+        }
+
+        .div_main-img{
+                background-color: map-get($coloresgenerales , color4 );
+                object-fit: cover;
+                width: 50%;
+                padding-right: 0;
+                padding-left: 0;
+                --bs-gutter-x: 0;
+
+                img{
+                    padding-right: 0;
+                    padding-left: 0;
+                }
+        }
+    }
+}
+
+@media (max-width: 991.98px){
+
+    .index-img{
+        display: none;
+    }
+
+    .div_main-img{
+      width: 100%;
+    }
+
+}
